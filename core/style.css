@@ -1,0 +1,51 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.conteneur
+{
+    margin: 100px 300px;
+    /*background: red;*/
+}
+.contenu
+{
+    padding: 20px;
+}
+.entete
+{
+    height: 40px;
+    background-color: #1ca8d6;
+    border-radius: 8px 8px 0 0;
+}
+.entete h3
+{
+    color:white;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.corps
+{
+    padding: 10px 30px;
+}
+.pied 
+{
+    padding: 20px;
+
+}
+.pied p
+{
+    font-weight: bolder;
+
+}
+.pied h3
+{
+    color: #1ca8d6;
+}
+.pied h2
+{
+    text-align: center;
+    margin-bottom: 10px;
+}

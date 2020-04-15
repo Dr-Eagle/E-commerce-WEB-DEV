@@ -1,0 +1,404 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+	3.1 Top Bar
+	3.2 Header Main
+	3.3 Main Navigation
+	3.4 Page Menu
+4. Banner
+5. Characteristics
+6. Deals of the week
+	6.1 Deals
+	6.2 Featured
+7. Popular Categories
+8. Banner 2
+9. Hot New Arrivals
+10. Hot Best Sellers
+11. Adverts
+12. Trends
+13. Latest Reviews
+14. Recently Viewed
+15. Brands
+16. Newsletter
+17. Footer
+
+
+******************************/
+
+/***********
+1. Fonts
+***********/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900');
+@import url("../plugins/fontawesome-free-5.0.1/webfonts/fa-regular-400.woff");
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	background: #FFFFFF;
+	color: #000000;
+}
+
+div {
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 0px;
+}
+
+p {
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+	font-weight: 400;
+	color: #828282;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+p a {
+	display: inline;
+	position: relative;
+	color: inherit;
+	border-bottom: solid 1px #ffa07f;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:link {
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+p a:active {
+	position: relative;
+	color: #FF6347;
+}
+
+p a:hover {
+	color: #FFFFFF;
+	background: #ffa07f;
+}
+
+p a:hover::after {
+	opacity: 0.2;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+h1,
+h2,
+h3
+{
+	border-bottom: 2px solid #1ca8d6;
+	color: #1ca8d6;
+}
+.form-control {
+	color: #db5246;
+}
+
+section {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.clear {
+	clear: both;
+	display: table;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.trans_200 {
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.trans_300 {
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.trans_400 {
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+
+.trans_500 {
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.fill_height {
+	height: 100%;
+}
+
+.super_container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.prlx_parent {
+	overflow: hidden;
+}
+
+.prlx {
+	height: 130% !important;
+}
+
+.nopadding {
+	padding: 0px !important;
+}
+
+.button {
+	display: inline-block;
+	background: #1ca8d6;
+	border-radius: 5px;
+	height: 48px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.button a {
+	display: block;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 48px;
+	color: #FFFFFF;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.button:hover {
+	color: #1ca8d6;
+	background-color: white;
+	border:2px solid #1ca8d6;
+}
+input[type="button"]
+{
+	color: white;
+	background-color: #1ca8d6;
+	border-radius: 5px;
+	border:2px solid #1ca8d6;
+}
+input[type="button"]:hover
+{
+	color: #1ca8d6;
+	background-color: white;
+	border:2px solid #1ca8d6;
+}
+
+.header {
+	background-color: #353b48;
+	height: 70px;
+	display: flex;
+	position: relative;
+}
+
+.header h1 {
+	width: 15%;
+}
+
+.header .barre_top {
+	width: 85%;
+}
+
+.header .barre_top .nav {
+	border-bottom: none;
+}
+
+.header .barre_top .nav a {
+	color: #dcdde1;
+	border: none;
+}
+
+.header .barre_top .nav a:hover {
+	border: 0;
+	color: #ffffff;
+	border-radius: none;
+}
+.header .barre_top .nav a[aria-expanded="true"]:hover
+{
+	color: #000000;
+}
+.header .nav-item .dropdown-menu .dropdown-item {
+	color: #000000;
+}
+
+.header .nav-item .dropdown-menu .dropdown-item:hover {
+	color: #000000;
+}
+
+
+.super_container
+{
+	display: flex;
+	position: relative;
+}
+.space_work
+{
+	flex: 85%;
+	position: relative;
+}
+
+.menu_gauche {
+	flex: 15%;
+	background-color: #353b48;
+	height: 100vh;
+	position: relative;
+}
+.menu_gauche .menu {
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+	position: relative;
+}
+.menu .nav-item
+{
+	width: 100%;
+}
+.menu .nav-item a {
+	color: #dcdde1;
+	font-size: 1.5em;
+	padding-left: 15px;
+	line-height: 35px;
+	display: block;
+	transition: all .5s ease-out;
+}
+
+.menu .nav-item a:hover {
+	background-color: #1ca8d6;
+}
+
+.menu .nav-item:hover a {
+	color: #FFFFFF;
+}
+.menu .nav-item .sous_menu .nav-item a {
+	color: #dcdde1;
+	font-size: 1em;
+	padding-left: 38px;
+	line-height: 35px;
+	display: block;
+}
+
+.menu .nav-item .sous_menu
+{
+	position: relative;
+	background-color: #2f3640;
+	display: none;
+	
+}
+
+.footer
+{
+	position: absolute;
+	bottom: 0;
+	background-color: #353b48;
+	padding:10px 0;
+	position: relative;
+	margin-top: 30px;
+}
+.footer p
+{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: #dcdde1;
+}
+.footer p a
+{
+	border-bottom: 1px solid white;
+}
+.footer p a:hover
+{
+	color: #1ca8d6 !important;
+	background-color: transparent;
+}
